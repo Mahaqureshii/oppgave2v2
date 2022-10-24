@@ -1,0 +1,66 @@
+<section class="nyheter">
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_1.jpg">
+        <h1>Fjelltur</h1>
+        <p>Ole er på fjelltur alene. Han sitter på en klippe 600m over havet</p>
+    </a>
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_2.jpg">
+        <h1>Natur</h1>
+        <p>Norge er kjent for sin natur og dette er et flott eksempel på hvorfor</p>
+    </a>
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_3.jpg">
+        <h1>foss</h1>
+        <p>Vann er viktig for kroppen og helsen</p>
+    </a>
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_4.jpg">
+        <h1>Nordlys</h1>
+        <p>Vi finner mye nordlys i Nord-Norge</p>
+    </a>
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_5.jpg">
+        <h1>Fjell</h1>
+        <p>Han ser opp mot fjellene</p>
+    </a>
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_6.jpg">
+        <h1>Snø</h1>
+        <p>på mange fjelltopper er det ofte glatt og mye snø</p>
+        
+    </a>
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_7.jpg">
+        <h1>Utsikt</h1>
+        <p>dette er flott tur for deg som ønsker fin utsikt og trening</p>
+    </a>
+    <a href="#" class="tre-kolonner">
+        <img src="friluftsliv_8.jpg">
+        <h1>gåtur</h1>
+        <p>fjellturer er en fin måte å komme seg ut og dra nytte av naturen</p>
+    </a>
+</section>
+
+
+
+<style>
+    .nyheter {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 80rem;
+        grid-auto-rows: minmax(12rem, auto);
+        gap: 2rem;
+        object-position: center;
+    }
+    img {
+        object-fit: cover;
+        height: 200px;
+        width: 250px;
+    }
+    .nyheter a {
+        background-color: lightslategray;
+        border: 1.5px solid black;
+    }
+    .tre-kolonner {grid-column: span 6; }
+</style>
